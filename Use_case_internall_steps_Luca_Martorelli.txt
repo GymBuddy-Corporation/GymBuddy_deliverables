@@ -1,0 +1,19 @@
+Name: Create Workout Routine
+
+1. The Personal Trainer requests to create a new workout routine for an athlete.
+2. The system generates a blank routine for each requested workout day.
+3. The system gets all the exercises from the Database.
+4. The Personal Trainer selects exercises for each training day, indicating the rest duration (up to 5 minutes), sets (up to 8), repetitions (up to 30).
+5. For each exercise, the system checks that the number of sets, repetitions, and recovery is suitable; it creates the workout routine by adding the exercises to it,
+	marking that routine as active.
+6. The Personal Trainer confirms the workout routine, optionally adding a note to it.
+7. The system saves the workout routine and marks it as active.
+8. The system sends a notification to the athlete.
+
+
+Extensions:
+1a. The athlete already has a workout routine active: The system asks to mark as not active the current workout routine.
+
+3a. The Database System does not respond: The system notifies the Personal Trainer and terminates the Use Case.
+
+5a. Invalid Exercise Data or the Personal Trainer has not fullfilled all the data: The system disables the creation of the workout routine and notifies the Personal Trainer.
