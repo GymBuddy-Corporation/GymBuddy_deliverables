@@ -27,4 +27,5 @@
 >9. As a professional user, i want to see my training data (weight progess, frequency of training, weight lost, muscle gaines) in my personal page, so that i can track how my training is going.
 
 
-10. As a 
+10. As the gym owner, I want to implement a referral program to incentivize my current members to bring in new clients,so that i can increase my costumers number.
+11. As the gym owner, I want to implement a points system that rewards you every time you make a new membership,so that more people will subscribe to my gym.
