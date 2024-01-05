@@ -12,5 +12,8 @@ INSERT INTO `gymbuddy`.`exercise` VALUES ('tricep pushdown','ACTIVE','nameGym');
 INSERT INTO `gymbuddy`.`exercise` VALUES ('dips','ACTIVE','nameGym');
 INSERT INTO `gymbuddy`.`exercise` VALUES ('shoulder press','SUSPENDED','nameGym');
 INSERT INTO `gymbuddy`.`exercise` VALUES ('squat','ACTIVE','nameGym');
-INSERT INTO `gymbuddy`.`request` VALUES ('yes', 'CRTLSN99T24H501R', 'MRTLCU00P01D612J','Vorrei una scheda per diventare grosso');
+INSERT INTO `gymbuddy`.`request` VALUES ('CRTLSN99T24H501R', 'MRTLCU00P01D612J','Vorrei una scheda per diventare grosso');
+INSERT INTO `gymbuddy`.`ptCommunication` VALUES ('La prossima settimana andrò in ritiro', 'CRTLSN99T24H501R', '2024-01-10');
+INSERT INTO `gymbuddy`.`gymCommunication` VALUES ('A Natale la palestra sarà chiusa', '2024-01-10', 'nameGym');
+
 
