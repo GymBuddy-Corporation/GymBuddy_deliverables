@@ -1,0 +1,16 @@
+INSERT INTO `gymbuddy`.`user` VALUES ('gym1','gym','gym@gmail.com'),('lux','lux','lux@gmail.com'),('alecortix','napule','pt@gmail.com');
+
+INSERT INTO `gymbuddy`.`gymlinfo` VALUES ('nameGym','piazza1','rome','IBAN213123123132','italy');
+INSERT INTO `gymbuddy`.`personalinfo` VALUES ('Alessandro','Cortese','1999-12-24','Roma','CRTLSN99T24H501R','m'),('Luca','Martorelli','2000-09-01','Firenze','MRTLCU00P01D612J','m');
+
+INSERT  INTO `gymbuddy`.`gym` VALUES ('gym@gmail.com','nameGym');
+
+
+INSERT INTO `gymbuddy`.`trainers` VALUES ('CRTLSN99T24H501R','pt@gmail.com','nameGym');
+INSERT INTO `gymbuddy`.`athlete` VALUES ('MRTLCU00P01D612J','123','CRTLSN99T24H501R','lux@gmail.com');
+INSERT INTO `gymbuddy`.`exercise` VALUES ('tricep pushdown','ACTIVE','nameGym');
+INSERT INTO `gymbuddy`.`exercise` VALUES ('dips','ACTIVE','nameGym');
+INSERT INTO `gymbuddy`.`exercise` VALUES ('shoulder press','SUSPENDED','nameGym');
+INSERT INTO `gymbuddy`.`exercise` VALUES ('squat','ACTIVE','nameGym');
+INSERT INTO `gymbuddy`.`request` VALUES ('yes', 'CRTLSN99T24H501R', 'MRTLCU00P01D612J','Vorrei una scheda per diventare grosso');
+
