@@ -7,15 +7,14 @@ INSERT  INTO `gymbuddy`.`gym` VALUES ('gym@gmail.com','nameGym');
 
 
 INSERT INTO `gymbuddy`.`trainers` VALUES ('CRTLSN99T24H501R','pt@gmail.com','nameGym');
-INSERT INTO `gymbuddy`.`athlete` VALUES ('MRTLCU00P01D612J','123','CRTLSN99T24H501R','lux@gmail.com');
+INSERT INTO `gymbuddy`.`athlete` VALUES ('MRTLCU00P01D612J','CRTLSN99T24H501R','lux@gmail.com');
 
 INSERT INTO `gymbuddy`.`exercise` VALUES ('tricep pushdown','ACTIVE','nameGym');
 INSERT INTO `gymbuddy`.`exercise` VALUES ('dips','ACTIVE','nameGym');
 INSERT INTO `gymbuddy`.`exercise` VALUES ('shoulder press','SUSPENDED','nameGym');
 INSERT INTO `gymbuddy`.`exercise` VALUES ('squat','ACTIVE','nameGym');
 
-INSERT INTO `gymbuddy`.`request` VALUES ('CRTLSN99T24H501R', 'MRTLCU00P01D612J','Vorrei una scheda per diventare grosso', '');
-
+INSERT INTO `gymbuddy`.`request` VALUES ('CRTLSN99T24H501R', 'MRTLCU00P01D612J','Vorrei una scheda per diventare grosso', '', '2024-01-06');
 INSERT INTO `gymbuddy`.`ptCommunication` VALUES ('La prossima settimana andrò in ritiro', 'CRTLSN99T24H501R', '2024-01-10');
 INSERT INTO `gymbuddy`.`gymCommunication` VALUES ('A Natale la palestra sarà chiusa', '2024-01-10', 'nameGym');
 
@@ -24,3 +23,4 @@ INSERT INTO gymbuddy.workoutday (nameWD, workoutRoutineInitDate, athleteFC) VALU
 INSERT INTO gymbuddy.workoutexercise (sets, rest, repetitions, workoutDayName, workoutRoutineInitDate, athleteFc, nameEx, exerciseStatus)
             VALUES (2, '00:30', 2, 'monday', curdate(), 'MRTLCU00P01D612J', 'dips', 'ACTIVE');
 
+INSERT INTO `gymbuddy`.`currentmembership` (`athleteFC`, `starDatetMembership`, `nameGym`, `endDateMembership`, `points`, `membershipName`, `membershipPrice`,`trainers_fc`) VALUES ('MRTLCU00P01D612J', '2002-01-20', 'namegym', '2025-01-20', '1000', 'adwa', '5','CRTLSN99T24H501R');
