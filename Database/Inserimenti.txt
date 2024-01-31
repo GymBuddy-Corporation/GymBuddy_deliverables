@@ -1,6 +1,6 @@
-INSERT INTO `gymbuddy`.`user` VALUES ('gym1','gym','gym@gmail.com'),('lux','lux','lux@gmail.com'),('alecortix','napule','pt@gmail.com');
+INSERT INTO `gymbuddy`.`user` VALUES ('gym1','Password123@','gym1@gmail.com'),('lux','Password123@','lux@gmail.com'),('alecortix','Password123@','pt@gmail.com');
 
-INSERT INTO `gymbuddy`.`gymlinfo` VALUES ('nameGym','piazza1','rome','IBAN213123123132','italy');
+INSERT INTO `gymbuddy`.`gymlinfo` VALUES ('nameGym','piazza del dominio 13','rome','IBAN213123123132','italy');
 INSERT INTO `gymbuddy`.`personalinfo` VALUES ('Alessandro','Cortese','1999-12-24','Roma','CRTLSN99T24H501R','m'),('Luca','Martorelli','2000-09-01','Firenze','MRTLCU00P01D612J','m');
 
 INSERT  INTO `gymbuddy`.`gym` VALUES ('gym@gmail.com','nameGym');
@@ -24,3 +24,12 @@ INSERT INTO gymbuddy.workoutexercise (sets, rest, repetitions, workoutDayName, w
             VALUES (2, '00:30', 2, 'monday', curdate(), 'MRTLCU00P01D612J', 'dips', 'ACTIVE');
 
 INSERT INTO `gymbuddy`.`currentmembership` (`athleteFC`, `starDatetMembership`, `nameGym`, `endDateMembership`, `points`, `membershipName`, `membershipPrice`,`trainers_fc`) VALUES ('MRTLCU00P01D612J', '2002-01-20', 'namegym', '2025-01-20', '1000', 'adwa', '5','CRTLSN99T24H501R');
+
+INSERT INTO `gymbuddy`.`user` VALUES ('gym2','Password123@','gym2@gmail.com'),('gym3','Password123@','gym3@gmail.com'),('gym4','Password123@','gym4@gmail.com'),('gym5','Password123@','gym5@gmail.com'),('gym6','Password123@','gym6@gmail.com'),('gym7','Password123@','gym7@gmail.com');
+
+INSERT INTO `gymbuddy`.`gymlinfo` VALUES ('PowerFlex Gym','Piazza dell Abete Rosso, 12','rome','ABCD123456789012','italy'),('EliteCore Fitness','Vico dei Sogni Doro, 7','naples','WXYZ987654321098','italy'),('IronPulse Athletics','Stradella delle Farfalle Blu, 23','rome','PQRS567890123456','italy'),('EliteForge Training Center','Via del Calice Incantato, 15','rome','MNOP345678901234','italy'),('StrengthVault Fitness','Vicolo degli Artigiani Erranti, 9','rome','UVWX876543210987','italy'),('VitalityVault Gym','Redwood Square, 12','london','EFGH234567890123','england');
+
+INSERT  INTO `gymbuddy`.`gym` VALUES ('gym2@gmail.com','PowerFlex Gym'),('gym3@gmail.com','EliteCore Fitness'),('gym4@gmail.com','IronPulse Athletics'),('gym5@gmail.com','EliteForge Training Center'),('gym6@gmail.com','StrengthVault Fitness'),('gym7@gmail.com','VitalityVault Gym');
+
+
+
