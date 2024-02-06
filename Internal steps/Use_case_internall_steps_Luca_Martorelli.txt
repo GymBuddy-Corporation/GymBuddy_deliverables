@@ -1,19 +1,29 @@
-Name: Create Workout Routine
+Name: Satisfy Workout Routine Request
 
-1. The Personal Trainer requests to create a new workout routine for an athlete.
-2. The system generates a blank routine for each requested workout day.
-3. The system gets all the exercises from the Database.
-4. The Personal Trainer selects exercises for each training day, indicating the rest duration (up to 5 minutes), sets (up to 8), repetitions (up to 30).
-5. For each exercise, the system checks that the number of sets, repetitions, and recovery is suitable; it creates the workout routine by adding the exercises to it,
-	marking that routine as active.
-6. The Personal Trainer confirms the workout routine, optionally adding a note to it.
-7. The system saves the workout routine and marks it as active.
-8. The system sends a notification to the athlete.
+1. The system receives a request from the Personal Trainer to fulfill a workout routine for an athlete.
+2. The system queries the database to retrieve all requests made by the Personal Trainer.
+3. The system presents the list of requests to the Personal Trainer.
+4. The Personal Trainer selects a specific request from the list.
+5. The system retrieves and displays detailed information related to the selected request.
+6. The Personal Trainer satisfies the selected request.
+7. The system queries the database to fetch all active exercises.
+8. The system presents a blank workout routine creation form populated with the available exercises.
+9. The Personal Trainer selects exercises for each training day and specifies rest duration, sets, and repetitions.
+10. For each exercise, the system validates the input data to ensure suitability.
+11. The system adds the validated exercises to the workout routine.
+12. The Personal Trainer confirms the workout routine, providing additional notes and a name.
+13. The system saves the finalized workout routine in the database.
+14. The system prepares an email containing the name and comment of the workout routine.
+15. The system sends the email to the athlete to notify them of the created workout routine.
 
 
 Extensions:
-1a. The athlete already has a workout routine active: The system asks to mark as not active the current workout routine.
 
-3a. The Database System does not respond: The system notifies the Personal Trainer and terminates the Use Case.
+6b. The Personal Trainer rejects the selected request: the system deletes the requests.
+6c. The Personal Trainer asks for a clarification of the selected request: the system opens an email form, that allows to write an email to the athlete.
 
-5a. Invalid Exercise Data or the Personal Trainer has not fullfilled all the data: The system disables the creation of the workout routine and notifies the Personal Trainer.
+9b. The Personal trainer doesn't find the exercise: the system opens a form for the Personal Trainer to view all gym exercises and manage their status.
+
+11b. The exercise data is invalid or incomplete: the system disables adding the exercise to the workout routine and notifies the Personal Trainer.
+
+13b. The Personal Trainer has not filled in all required data, the system does not save the workout routine and notifies the Personal Trainer to complete all necessary information.
