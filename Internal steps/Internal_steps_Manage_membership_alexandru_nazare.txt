@@ -1,16 +1,21 @@
 Name: Manage membership
-1. The user asks to buy a new membership.
-2. The system prepares a list of all the old membership bought in the payments.
-3. The system shows the user how many points the user has.
-4. The system prepares a list of available plans for a new membership.
-5. The user chooses one of the plans shown to him.
-6. The system checks the user's point and prepares a list of available offers that he can use with the points that he has.
-7. The user chooses one of the offers or none.
-8. The system prepares the transaction and prompts to choose between payments methods (only paypal for now).
-9. The User chooses the payment method.
-10. The System prepares an empty form for making the payment.
-11. The Users compiles the form.
-12. The System makes the payment.
-13. The System deducts/adds points to the user point balance if needed.
-14. The System stores the payment recipe.
-15. The System sends an email to the user with the payment recipe.
+1.  The user asks to buy a new membership.
+2   The system prepares a blank filter for searching gyms.
+3.  The user compiles the filter.
+4.  The system prepares a list of gyms and their information using the filter. 
+5.  The user selects a gym from the list.
+6.  The system prepares a list of available memberships for the selected gym.
+7.  The user selects one of the memberships shown to him.
+8.  The system prepares a list of available coupons for the selected gym.
+9.  The user selects coupons from the list.
+10. The system prepares the transaction and prompts to choose between payments methods.
+11. The User chooses the payment method.
+12. The System prepares an empty form for making the payment.
+13. The Users compiles the form.
+14. The System makes the payment.
+15. The System saves the new membership.
+
+Extensions:
+10a. Membership or coupons combination can't be used by user: The system notrifies the user and returns to step 6 .
+14a. The payment does not conclude with a postive result: The system notifies the user and returns to step 10 .
+15a. the system didn't succeed on saving the new membership: The system reverses the transaction done on step 14 and notrifies the user terminating the use case.

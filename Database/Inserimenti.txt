@@ -1,4 +1,4 @@
-INSERT INTO `gymbuddy`.`user` VALUES ('gym1','Password123@','gym1@gmail.com'),('lux','Password123@','lux@gmail.com'),('alecortix','Password123@','pt@gmail.com');
+INSERT INTO `gymbuddy`.`user` VALUES ('gym1','Password123@','gym@gmail.com'),('lux','Password123@','lux@gmail.com'),('alecortix','Password123@','pt@gmail.com');
 
 INSERT INTO `gymbuddy`.`gymlinfo` VALUES ('nameGym','piazza del dominio 13','rome','IBAN213123123132','italy');
 INSERT INTO `gymbuddy`.`personalinfo` VALUES ('Alessandro','Cortese','1999-12-24','Roma','CRTLSN99T24H501R','m'),('Luca','Martorelli','2000-09-01','Firenze','MRTLCU00P01D612J','m');
