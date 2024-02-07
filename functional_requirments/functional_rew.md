@@ -1,14 +1,17 @@
 ### Functional requirements
 
-
 1. The `system` shall allow to add a personalized note when assigning a `workout routine`<sup>2</sup>.
 2. The `system` shall allow the creation of new `access credentials` <sup>3</sup>  for new `users`.
-3. The `system` shall store all the `users’` `workout routines`.
-4. The `system` shall provide the creation of new `workout routines`.
-6. The `system` shall allow to mark as `skipped`<sup>4</sup> exercises or sets of a workout routine.
-7. The `system` shall provide the creation of additional types of memberships and coupons.
-8. The `system` shall notify the user when a new weekly `workout report`<sup>1</sup> is available.
-9. The `system` shall filter gyms by name, address, city and country.
+3. The `system` shall provide the creation of new `workout routines`.
+4. The `system` shall allow to mark as `skipped`<sup>4</sup> exercises or sets of a workout routine.
+5. The `system` shall provide the creation of additional types of memberships and coupons.
+6. The `system` shall filter gyms by name, address, city and country.
+
+Extra:
+1. The `system` shall store all the `users’` `workout routines`.
+2. The `system` shall notify the user when a new weekly `workout report`<sup>1</sup> is available.
+
+
 
 ### Dictionary
 
